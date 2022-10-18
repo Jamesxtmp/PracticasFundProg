@@ -1,4 +1,4 @@
-package jamesxtmp.practicasfundprog;
+package PracticasParcial;
 
 import java.util.Scanner;
 
