@@ -11,6 +11,23 @@ su pago total y si tiene o no promoción.
 public class Practica5 {
 
     public static void main(String[] args) {
-        //TODO Practica 5...
+        Scanner leer = new Scanner(System.in);
+        float time, costoHora, total;
+        
+        System.out.println("> Mas de 3h, +1h por promoción");
+        System.out.println("Costo por hora");
+        costoHora = leer.nextFloat();
+        System.out.println("Horas de uso");
+        time = leer.nextFloat();
+        System.out.println("--------------------------------------");
+        
+        if(time > 3){
+            System.out.println("Obtienes una hora extra");
+            time -= 1;
+        }else{
+            System.out.println("No aplicas para la Promocion");
+        }
+        total = time * costoHora;
+        System.out.println("Tu total es de: " + total);
     }
 }
